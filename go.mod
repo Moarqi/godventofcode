@@ -1,3 +1,3 @@
-module moarqi/godventofcode
+module github.com/Moarqi/godventofcode
 
 go 1.18
