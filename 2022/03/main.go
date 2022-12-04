@@ -116,6 +116,6 @@ func main() {
 		go util.ReadInput("/home/markus/dev/godventofcode/2022/03/input.txt", lineChannel)
 	}
 
-	// solveFirstPart(lineChannel, isTest)
-	solveSecondPart(lineChannel, isTest)
+	solveFirstPart(lineChannel, isTest)
+	// solveSecondPart(lineChannel, isTest)
 }
