@@ -10,7 +10,7 @@ import (
 
 func main() {
 	lineChannel := make(chan string)
-	go util.ReadInput("/home/markus/dev/godventofcode/2022/01/input.txt", lineChannel)
+	go util.ReadInput("/home/markus/dev/godventofcode/2022/01/input.txt", lineChannel, true)
 
 	caloriesPerElf := make([]int, 0)
 	currentCalories := 0

@@ -112,9 +112,9 @@ func main() {
 
 	lineChannel := make(chan string)
 	if isTest {
-		go util.ReadInput(path.Dir(filename)+"/test.txt", lineChannel)
+		go util.ReadInput(path.Dir(filename)+"/test.txt", lineChannel, true)
 	} else {
-		go util.ReadInput(path.Dir(filename)+"/input.txt", lineChannel)
+		go util.ReadInput(path.Dir(filename)+"/input.txt", lineChannel, true)
 	}
 
 	if len(os.Args) > 1 && os.Args[1] == "1" {

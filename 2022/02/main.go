@@ -159,7 +159,7 @@ func solveSecondPart(lineChannel chan string) {
 
 func main() {
 	lineChannel := make(chan string)
-	go util.ReadInput("/home/markus/dev/godventofcode/2022/02/input.txt", lineChannel)
+	go util.ReadInput("/home/markus/dev/godventofcode/2022/02/input.txt", lineChannel, true)
 
 	// solveFirstPart(lineChannel)
 	solveSecondPart(lineChannel)

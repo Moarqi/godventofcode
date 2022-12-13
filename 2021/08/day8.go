@@ -268,7 +268,7 @@ func main() {
 	start := time.Now()
 
 	lineChannel := make(chan string)
-	go util.ReadInput("/home/markus/dev/godventofcode/2021/08/data/input", lineChannel)
+	go util.ReadInput("/home/markus/dev/godventofcode/2021/08/data/input", lineChannel, true)
 
 	decodeSignal(lineChannel)
 	// validCount := getUniqueOutputs(lineChannel)

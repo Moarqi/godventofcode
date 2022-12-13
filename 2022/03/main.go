@@ -111,9 +111,9 @@ func main() {
 	isTest := false
 	lineChannel := make(chan string)
 	if isTest {
-		go util.ReadInput("/home/markus/dev/godventofcode/2022/03/test.txt", lineChannel)
+		go util.ReadInput("/home/markus/dev/godventofcode/2022/03/test.txt", lineChannel, true)
 	} else {
-		go util.ReadInput("/home/markus/dev/godventofcode/2022/03/input.txt", lineChannel)
+		go util.ReadInput("/home/markus/dev/godventofcode/2022/03/input.txt", lineChannel, true)
 	}
 
 	solveFirstPart(lineChannel, isTest)
